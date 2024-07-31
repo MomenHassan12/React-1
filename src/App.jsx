@@ -14,7 +14,7 @@ function App() {
   const myRouter = createBrowserRouter(
     [
       {
-        path: '', element: <Layout />, children: [
+        path: '/React-1', element: <Layout />, children: [
           { index: true, element: <Home /> }, //Route
           { path: '/About', element: <About /> },
           { path: '/Portfolio', element: <Portfolio /> },
