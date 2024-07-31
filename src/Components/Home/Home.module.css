@@ -1,0 +1,11 @@
+.line{
+height: 4px;
+width: 80px;
+background-color: #fff;
+
+}
+.homeHeading{
+    line-height: 41px;
+    font-weight: 700;
+    font-size: 35px;
+}
