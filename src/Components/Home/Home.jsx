@@ -1,5 +1,5 @@
 import style from "./Home.module.css"
-// import im
+import img1 from "../../assets/avataaars.svg"
 export default function Home() {
 
 
@@ -9,7 +9,7 @@ export default function Home() {
             <div className="  mx-auto bg-[#1ABC9C] ">
                 <div className="container mx-auto ">
                     <div className=' flex flex-col mb-4 pt-16  justify-center items-center'>
-                        <img src="./src/assets/avataaars.svg" alt="avatar" className="w-[250px]" />
+                        <img src={img1} alt="avatar" className="w-[250px]" />
                     </div>
                     <div className="home-content flex flex-col justify-normal items-center gap-4">
                         <h1 className={style.homeHeading}>START FRAMEWORK</h1>
