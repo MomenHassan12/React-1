@@ -17,9 +17,9 @@ function App() {
       element: <Layout />, 
       children: [
         { index: true, element: <Home /> }, //Home Route
-        { path: 'About', element: <About /> },
-        { path: 'Portfolio', element: <Portfolio /> },
-        { path: 'Contact', element: <Contact /> },
+        { path: '/About', element: <About /> },
+        { path: '/Portfolio', element: <Portfolio /> },
+        { path: '/Contact', element: <Contact /> },
         { path: '*', element: <h1 className='text-black'>404 NOT FOUND PAGE</h1> }
       ]
     }
