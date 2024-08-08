@@ -13,7 +13,7 @@ function App() {
 
   const myRouter = createBrowserRouter([
     {
-      path: '/React-1', 
+      path: '/React-1/', 
       element: <Layout />, 
       children: [
         { index: true, element: <Home /> }, //Home Route
