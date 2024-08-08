@@ -6,7 +6,7 @@ export default function Navbar() {
         <>
             <nav class="bg-[#2C3E50] py-5 border-gray-200 ">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link to='/' class="flex items-center space-x-3 rtl:space-x-reverse" >
+                    <Link to='/React-1' class="flex items-center space-x-3 rtl:space-x-reverse" >
                         <span class="self-center text-2xl font-semibold whitespace-nowrap ">START FRAMEWORK</span>
                     </Link>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
