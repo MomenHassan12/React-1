@@ -11,26 +11,23 @@ import Contact from './Components/Contact/Contact.jsx'
 
 function App() {
 
-  const myRouter = createBrowserRouter(
-    [
-      {
-        path: '/React-1', element: <Layout />, children: [
-          { index: true, element: <Home /> }, //Route
-          { path: '/About', element: <About /> },
-          { path: '/Portfolio', element: <Portfolio /> },
-          { path: '/Contact', element: <Contact /> },
-          , { path: '*', element: <h1 className=' text-black'>404 NOT FOUND PAGE </h1> }
-        ]
-      },
+  const myRouter = createBrowserRouter([
+    {
+      path: '/React-1', 
+      element: <Layout />, 
+      children: [
+        { index: true, element: <Home /> }, //Home Route
+        { path: 'About', element: <About /> },
+        { path: 'Portfolio', element: <Portfolio /> },
+        { path: 'Contact', element: <Contact /> },
+        { path: '*', element: <h1 className='text-black'>404 NOT FOUND PAGE</h1> }
+      ]
+    }
+  ]);
 
-
-    ]
-  )
   return (
-    <>
-      <RouterProvider router={myRouter} />
-    </>
+    <RouterProvider router={myRouter} />
   )
 }
 
-export default App
+export default App;
