@@ -6,7 +6,7 @@ export default function Navbar() {
         <>
             <nav class="bg-[#2C3E50] py-5 border-gray-200 ">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link to='/' class="flex items-center space-x-3 rtl:space-x-reverse" >
+                    <Link to='' class="flex items-center space-x-3 rtl:space-x-reverse" >
                         <span class="self-center text-2xl font-semibold whitespace-nowrap ">START FRAMEWORK</span>
                     </Link>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
@@ -18,13 +18,13 @@ export default function Navbar() {
                     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#2C3E50] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#2C3E50] ">
                             <li>
-                                <NavLink to="/about" class="block py-2 px-3 text-white rounded md:bg-transparent  md:p-0 " aria-current="page">About</NavLink>
+                                <NavLink to="about" class="block py-2 px-3 text-white rounded md:bg-transparent  md:p-0 " aria-current="page">About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/portfolio" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Portfolio</NavLink>
+                                <NavLink to="portfolio" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Portfolio</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</NavLink>
+                                <NavLink to="contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">Contact</NavLink>
                             </li>
                         </ul>
                     </div>
