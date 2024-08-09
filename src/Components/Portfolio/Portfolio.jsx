@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
 import style from "./Portfolio.module.css";
-
+import img1 from "../../assets/imgs/poert1.png"
+import img2 from "../../assets/imgs/port2.png"
+import img3 from "../../assets/imgs/port3.png"
 export default function Portfolio() {
     const [items, setItems] = useState(
-        ["poert1.png", "port2.png", "port3.png", "poert1.png", "port2.png", "port3.png"]
+        [img1, img2, img3, img1, img2, img3]
     )
     const [selectedImage, setSelectedImage] = useState(null);
     const [showImageShow, setShowImageShow] = useState(false);
@@ -41,8 +43,8 @@ export default function Portfolio() {
                     <div className="portfolio-items flex flex-wrap gap-10">
                         {items.map((image, index) => (
                             <div className='lg:w-[30%] md:w-[47%] sm:w-[100%]' key={index}>
-                                <div className={style.item} onClick={() => handleClick(`src/assets/imgs/${image}`)}>
-                                    <img src={`src/assets/imgs/${image}`} alt={`port${index + 1}`} className="w-full rounded-md" />
+                                <div className={style.item} onClick={() => handleClick(image)}>
+                                    <img src={image} alt={`port${index + 1}`} className="w-full rounded-md" />
                                     <div className={style.itemCover}>
                                         <i className="fa-6x fa-solid fa-plus"></i>
                                     </div>
